@@ -1,13 +1,232 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #323b4c;
+  font-weight: bold;
 }
+h2 {
+  background-color: #35251d;
+  color: #d0d0d1;
+  display: inline;
+  padding: 5px;
+  border-radius: 7px;
+}
+/* Wrapp */
+.wrapp {
+  background: radial-gradient(#7b7f86,#d0d0d1);
+  margin: 2vh 5vh 5vh 2vh;
+  /* margin: 2%; */
+  border-radius: 3px;
+  box-shadow: 3px 1px 7px 0px #fff;
+  display: flex;
+  min-height: 95vh;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media  (max-width: 930px) {
+  .wrapp {
+    flex-direction: column;
+  }
+  .main-cont {
+    /* flex: 100% 0 0; */
+    order: 1;
+  }
+  .bigSecond-cont {
+    order: 2;
+  }
+  .bigThird-cont {
+    order: 3;
+  }
+}
+/* Main */
+.main-cont {
+flex: 1;
+/* margin: 10px;  */
+/* align-self: flex-start; */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+background: radial-gradient(#7b7f86,#d0d0d1);
+border: solid 3px grey;
+/* height: 85vh; */
+/* margin: 10px 20% 0 20%; */
+margin: 20px 0 0 0;
+border-radius: 30% 30% 7px 7px;
+box-shadow: 3px 1px 7px 0px #fff;
+padding: 10px;
+}
+.my-name {
+  font-family: 'Kaushan Script', cursive; 
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.my-avatar {
+  background: url('./assets/cat-avatar.jpg');
+  /* background-color: blueviolet; */
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 45%;
+}
+.my-prof {
+  text-align: center;
+font-family: 'Kaushan Script', cursive;
+border: grey solid;
+padding: 7px;
+margin: 7px;
+border-radius: 3px;
+background: radial-gradient(yellow, red);
+box-shadow: 3px 1px 7px 0px #fff;
+}
+.contacts-cont-for-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 5px;
+}
+.contacts-cont-for-all  li {
+  margin-top: 15px;
+}
+.contacts-cont-for-all a {
+  text-decoration: none;
+  color: #35251d;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+
+}
+.whatsapp-img, .tg-img, .mail-img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  /* background-color: red; */
+}
+.tg-img {
+  background: url('./assets/telegram.png');
+  background-size: 20px 20px;
+}
+.whatsapp-img {
+  background: url('./assets/watsapp.png');
+  background-size: 20px 20px;
+}
+.mail-img {
+  background: url('./assets/gmail.png');
+  background-size: 20px 15px; 
+  background-repeat: no-repeat;
+}
+/* ---------------bigSecond-cont */
+.bigSecond-cont {
+flex: 1;
+margin: 10px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* Hard Skill */
+
+.hSkill-cont {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+.hard-it-cont {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  width: 200px;   
+  padding: 5px; 
+}
+.hard-it-git {
+  width: 70px;
+        height: 10px;
+        border: #35251d solid;
+        border-radius: 3px;
+        background: linear-gradient(to right, aqua 30%, black 10%);
+}
+.hard-it-js {
+  width: 70px;
+        height: 10px;
+        border: #35251d solid;
+        border-radius: 3px;
+        background: linear-gradient(to right, aqua 50%, black 10%);
+}
+.hard-it-node {
+  width: 70px;
+  height: 10px;
+  border: #35251d solid;
+  border-radius: 3px;
+  background: linear-gradient(to right, aqua 50%, black 10%);
+}
+.hard-it-html {
+  width: 70px;
+  height: 10px;
+  border: #35251d solid;
+  border-radius: 3px;
+  background: linear-gradient(to right, aqua 80%, black 10%);
+}
+.hard-it-css {
+  width: 70px;
+  height: 10px;
+  border: #35251d solid;
+  border-radius: 3px;
+  background: linear-gradient(to right, aqua 70%, black 10%);
+}
+.hard-it-react {
+  width: 70px;
+  height: 10px;
+  border: #35251d solid;
+  border-radius: 3px;
+  background: linear-gradient(to right, aqua 30%, black 10%); 
+}
+.hard-it-ts {
+  width: 70px;
+  height: 10px;
+  border: #35251d solid;
+  border-radius: 3px;
+  background: linear-gradient(to right, aqua 40%, black 10%); 
+}
+/* Soft Skill */
+.sSkill-cont {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* Lang. Skill */
+.lang-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/* --------------------bigThird-cont */
+.bigThird-cont {
+flex: 1;
+margin: 10px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* About Me */
+.aboutMe-cont {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+.profile-text {
+  width: 200px;
+}
+/* Links */
+.links-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
 }
